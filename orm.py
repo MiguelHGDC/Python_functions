@@ -7,7 +7,7 @@ from datetime import date
 
 #PROGRAM METADATA
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://AppDeportes:deportes@localhost/Deportes'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://<user>:<password>@localhost/<Database>'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False #para ocultar los warnings
 
 db = SQLAlchemy(app)
